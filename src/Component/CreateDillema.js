@@ -96,4 +96,4 @@ class CreateDillema extends React.Component {
 
 
 
-export default CreateDillema
+export default connect(CreateDillema)
