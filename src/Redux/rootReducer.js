@@ -2,17 +2,17 @@ import { combineReducers } from 'redux'
 
 const defaultState = {
     currentUser: null,
-    allThoughts: [],
-    someThoughts: [],
-    myThoughts: [],
+    allDillemas: [],
+    someDillemas: [],
+    myDillemas: [],
     notes:[]
 }
 
 const rootReducer = combineReducers({
     currentUser: setUser,
-    allThoughts: getThoughtsData,
-    someThoughts: getSomeThoughts,
-    myThoughts: getMyThoughts,
+    allDillemas: getDillemasData,
+    someDillemas: getSomeDillemas,
+    myDillemas: getMyDillemas,
     notes: getNotes
 })
 
