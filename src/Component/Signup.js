@@ -24,7 +24,7 @@ class Signup extends React.Component{
             <h1>This is the signup page </h1>
             { this.state.finished?
             <>
-                <Redirect to="/welcome" /> 
+                <Redirect to="/Homepage" /> 
             </>
             :
             <>
