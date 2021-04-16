@@ -23,6 +23,26 @@ function setUser(state = defaultState.currentUser, action) {
     }
 }
 
+function getDillemasData(state = defaultState.allDillemas, action) {
+    switch (action.type) {
+        case "ALL_DILLEMAS":
+            return (action.payload)
+        default:
+            return state
+    }
+}
+
+function getMyDillemas(state = defaultState.myDillemas, action) {
+    switch (action.type) {
+        case "MY_DILLEMAS":
+            return (action.payload)
+        default:
+            return state
+    }
+}
+
+
+
 const rootReducer = combineReducers({
     currentUser: setUser,
     allDillemas: getDillemasData,
