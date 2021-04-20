@@ -41,6 +41,15 @@ function getMyDillemas(state = defaultState.myDillemas, action) {
     }
 }
 
+function getNotes(state = defaultState.notesArray, action) {
+    switch (action.type) {
+        case "GET_NOTES":
+            return (action.payload)
+        default:
+            return state
+    }
+}
+
 
 
 const rootReducer = combineReducers({
