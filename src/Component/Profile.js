@@ -11,4 +11,16 @@ class Profile extends React.Component{
     }
 }
 
-export default connect()(Profile)
+function msp(state){
+    return({
+        curentUser: state.curentUser
+    })
+}
+
+function mdp(dispatch){
+    return({
+        
+    })
+}
+
+export default connect(msp,mdp)(Profile)
