@@ -41,7 +41,7 @@ export function editAccount(userId, updatedObj, history){
         })
         .then(response => response.json())
         .then(userData => {
-            history.push()
+            history.push("/profile")
         })
         .catch((error) => {
             console.error('Error:', error)
