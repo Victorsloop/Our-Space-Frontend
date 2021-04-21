@@ -48,3 +48,16 @@ export function editAccount(userId, updatedObj, history){
         })
     }
 }
+
+export function deleteUser(userId,history) {
+    return function(dispatch) {
+        fetch(`http://localhosty:3000/apu/v1/users/${userId}`,{
+            method: "DELETE",
+        })
+        .then(response => response.json())
+        .then(data => {
+            dispatch({type: actionTypes.deleteAccount,payload: userId})
+        })
+        .catch(console.log)
+    }
+}
