@@ -29,3 +29,22 @@ export function updateUser(userObj) {
         dispatch({type: actionTypes.updateUser,payload: userObj})
     }
 }
+
+export function editAccount(userId, updatedObj, history){
+    return function (dispatch) {
+        fetch(`http://localhost:3000/api/v1/users/${userId}`,{
+            method: `PATCH`,
+            headers:{
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(updatedObj),
+        })
+        .then(response => response.json())
+        .then(userData => {
+            history.push()
+        })
+        .catch((error) => {
+            console.error('Error:', error)
+        })
+    }
+}
