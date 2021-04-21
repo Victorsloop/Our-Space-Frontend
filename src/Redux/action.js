@@ -1,5 +1,7 @@
 import actionTypes from './actionTypes'
 
+// User Functions
+
 export function setUser(userObj, history) {
     return function (dispatch) {
         fetch('http://localhost:3000/api/v1/login', {
@@ -19,5 +21,11 @@ export function setUser(userObj, history) {
                 history.push("/home")
             })
             .catch(console.log)
+    }
+}
+
+export function updateUser(userObj) {
+    return function(dispatch) {
+        dispatch({type: actionTypes.updateUser,payload: userObj})
     }
 }
