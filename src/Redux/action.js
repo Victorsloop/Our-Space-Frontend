@@ -102,3 +102,14 @@ export function getADillema(userId){
         .catch(console.log)
     }
 }
+
+export function deleteDillema(dillemaId, history){
+    return function(){
+        fetch(`http://localhost:3000/api/v1/dillemas/${dillemaId}`,{
+            method: "DELETE",
+        })
+        .then( response => response.json())
+        .then(history.push('allDillemas'))
+        .catch(console.log)
+    }
+}
