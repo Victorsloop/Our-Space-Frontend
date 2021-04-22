@@ -75,3 +75,19 @@ export function browseDillemas(userId) {
         .catch(console.log)
     }
 }
+
+export function postADillema(dillemaObj, history){
+    return function() {
+        fetch('http://localhost:3000/api/v1/dillemas',{
+            method: "POST",
+            headers:{
+                Accepts: "application/json",
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({dillema: dillemaObj})
+        })
+        .then(response => response.json())
+        .then(history.push('/home'))
+        .catch(console.log)
+    }
+}
