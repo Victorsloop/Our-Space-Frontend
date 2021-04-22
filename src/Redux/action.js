@@ -91,3 +91,14 @@ export function postADillema(dillemaObj, history){
         .catch(console.log)
     }
 }
+
+export function getADillema(userId){
+    return function(dispatch) {
+        fetch('http://localhost:3000/api/v1/dillemas')
+        .then( response => response.json())
+        .then( allDillemas => {
+            dispatch({type: actionTypes.myDillemas, payload: data})
+        })
+        .catch(console.log)
+    }
+}
