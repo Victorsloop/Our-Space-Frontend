@@ -61,3 +61,17 @@ export function deleteUser(userId,history) {
         .catch(console.log)
     }
 }
+
+// Dillemas functions 
+
+export function browseDillemas(userId) {
+    return function (dispatch) {
+        fetch('http://localhost:3000/api/v1/dillemas')
+        .then(response => response.json())
+        .then(allDillemas => {
+            dispatch({ type: actionTypes.allDillemas, payload: allDillemas})
+            dispacth({ type: actionTypes.browseDillemas, payload: data})
+        })
+        .catch(console.log)
+    }
+}
