@@ -116,6 +116,18 @@ export function deleteDillema(dillemaId, history){
 
 // Note functions 
 
+export function getNotes(dillemaId) {
+    return function (dispatch) {
+        fetch(`http://localhost:3000/api/v1/notes`)
+            .then(response => response.json())
+            .then(notesArr => {
+                let newNotesArr = notesArr.filter(note => note.dillema_id === dillemaId)
+                dispatch({ type: actionTypes.getNotes, payload: data })
+            })
+            .catch(console.log)
+    }
+}
+
 export function sendNote(noteObj, history) {
     return function () {
         fetch('http://localhost:3000/api/v1/notes', {
