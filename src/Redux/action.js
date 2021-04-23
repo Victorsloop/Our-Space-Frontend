@@ -113,3 +113,21 @@ export function deleteDillema(dillemaId, history){
         .catch(console.log)
     }
 }
+
+// Note functions 
+
+export function sendNote(noteObj, history) {
+    return function () {
+        fetch('http://localhost:3000/api/v1/notes', {
+            method: "POST",
+            headers: {
+                Accepts: "application/json",
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ note: noteObj })
+        })
+            .then(response => response.json())
+            .then(history.goBack())
+            .catch(console.log)
+    }
+}
