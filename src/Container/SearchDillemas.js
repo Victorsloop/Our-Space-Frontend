@@ -12,6 +12,17 @@ class SearchDillema extends React.Component {
     }
 }
 
+function msp(state) {
+    return ({
+
+    })
+}
+
+function mdp(dispatch) {
+    return {
+
+    }
+}
 
 
-export default connect(SearchDillema)
+export default connect(msp,mdp)(SearchDillema)
