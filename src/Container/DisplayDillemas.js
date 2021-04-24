@@ -12,6 +12,16 @@ class DisplayDillema extends React.Component {
     }
 }
 
+function msp(state) {
+    return ({
+
+    })
+}
+
+function mdp(dispatch) {
+    return {
+    }
+}
 
 
-export default connect(DisplayDillema)
+export default connect(msp,mdp)(DisplayDillema)
