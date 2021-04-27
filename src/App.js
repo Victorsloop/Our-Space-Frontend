@@ -55,7 +55,7 @@ class App extends React.Component {
 
 function msp(state){
   return{
-
+    currentUser: state.currentUser
   }
 }
 
