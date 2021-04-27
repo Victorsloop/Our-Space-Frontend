@@ -43,6 +43,8 @@ class App extends React.Component {
             <Route path="/home" render={() => <Homepage />} />
             <Route path="/login" component={Login} />
             <Route path="/signup" component={Signup} />
+            <Route path="/profile" component={Profile} />
+            <Route path="/edit" render={() => <EditProfile userObj={this.props.currentUser} />} />
         </Switch>
         </>
         
