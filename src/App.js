@@ -1,6 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
+
 import {Route,Switch} from 'react-router-dom'
+import connect from 'react-redux'
+import updateUser from './Redux/action/updateUser'
+
 
 import Header from './Component/Header'
 import Homepage from './Component/Homepage'
