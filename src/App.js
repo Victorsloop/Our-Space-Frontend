@@ -15,6 +15,22 @@ import EditProfile from './Component/EditProfile'
 
 class App extends React.Component {
 
+  componentDidMount() {
+    const token = localStorage.getItem("token")
+    if (token) {
+      fetch('http://localhost:3000/api/v1/profile', {
+        method: "GET",
+        headers: { Authorization: `Bearer ${token}` },
+      })
+        .then(response => response.json())
+        .then(data => {
+          this.props.refreshUser(data.user)
+        })
+        .catch(console.log)
+    }
+  }
+
+
   render() {
     return (
       <>
