@@ -43,7 +43,7 @@ function msp(state){
 
 function mdp(dispacth){
   return{
-
+    updateUser: (userObj) => dispatch(updateUser(userObj))
   }
 }
 
