@@ -29,5 +29,16 @@ class App extends React.Component {
   }
 }
 
+function msp(state){
+  return{
+
+  }
+}
+
+function mdp(dispacth){
+  return{
+    
+  }
+}
 
 export default connect(msp, mdp)(App)
