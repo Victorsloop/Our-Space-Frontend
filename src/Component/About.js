@@ -12,16 +12,6 @@ class About extends React.Component {
     }
 }
 
-function msp(state) {
-    return ({
-
-    })
-}
-
-function mdp(dispatch) {
-    return {
-    }
-}
 
 
-export default connect(msp,mdp)(About)
+export default (About)
