@@ -13,6 +13,9 @@ import Login from './Component/Login'
 import Profile from './Component/Profile'
 import EditProfile from './Component/EditProfile'
 
+import DisplayDillemaa from './Container/DisplayDillemas'
+import SearchDillema from './Container/SearchDillemas'
+
 class App extends React.Component {
 
   componentDidMount() {
