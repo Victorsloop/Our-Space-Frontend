@@ -62,7 +62,7 @@ function msp(state){
   }
 }
 
-function mdp(dispacth){
+function mdp(dispatch){
   return{
     updateUser: (userObj) => dispatch(updateUser(userObj))
   }
