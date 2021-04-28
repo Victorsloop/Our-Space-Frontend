@@ -24,6 +24,8 @@ function msp(state) {
 
 function mdp(dispatch) {
     return {
+        getNotes: (dillemaId) => dispatch(getNotes(dillemaId)),
+        deleteDillema: (dillemaId,history) => dispatch(deleteDillema(dillemaId,history))
     }
 }
 
