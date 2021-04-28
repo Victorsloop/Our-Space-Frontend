@@ -1,4 +1,6 @@
 import React from 'react'
+import connect from 'react-redux'
+import {setUser} from '../Redux/action'
 // import { Redirect } from 'react-router-dom'
 
 class Login extends React.Component {
