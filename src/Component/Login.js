@@ -53,4 +53,4 @@ function mdp(dispatch){
 
 
 
-export default connect((null,mdp)Login)
+export default connect((null,mdp)(Login))
