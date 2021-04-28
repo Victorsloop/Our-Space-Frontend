@@ -1,6 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {Navlink} from 'react-router-dom'
+import {withRouter} from 'react-router'
 
 class SearchDillema extends React.Component {
 

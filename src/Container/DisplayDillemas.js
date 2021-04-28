@@ -1,6 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {Navlink} from 'react-router-dom'
+import {withRouter} from 'react-router'
 
 
 class DisplayDillema extends React.Component {
@@ -21,7 +22,6 @@ function msp(state) {
 
 function mdp(dispatch) {
     return {
-        null
     }
 }
 
