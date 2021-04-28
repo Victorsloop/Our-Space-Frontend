@@ -2,6 +2,8 @@ import React from 'react'
 import {connect} from 'react-redux'
 import {Navlink} from 'react-router-dom'
 import {withRouter} from 'react-router'
+import {deleteDillema} from '../Redux/action'
+import {getNotes} from '../Redux/action'
 
 
 class DisplayDillema extends React.Component {
