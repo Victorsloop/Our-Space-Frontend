@@ -44,6 +44,13 @@ class Login extends React.Component {
     }
 }
 
+function mdp(dispatch){
+    return{
+        currentUser: (userObj, history) => dispatch(setUser(userObj, history))
+
+    }
+}
 
 
-export default Login
+
+export default connect((null,mdp)Login)
