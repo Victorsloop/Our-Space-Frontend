@@ -40,6 +40,14 @@ function getMyDillemas(state = defaultState.myDillemas, action) {
             return state
     }
 }
+function getSomeDillemas(state = defaultState.someDillemas, action) {
+    switch (action.type) {
+        case "GET_DILLEMAS":
+            return (action.payload)
+        default:
+            return state
+    }
+}
 
 function getNotes(state = defaultState.notesArray, action) {
     switch (action.type) {
