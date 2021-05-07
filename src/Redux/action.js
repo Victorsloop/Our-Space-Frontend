@@ -124,7 +124,6 @@ function dillemaRandomizer(arr){
     return arr.slice(0, 5);
 }
 
-
 // Note functions 
 
 export function getNotes(dillemaId) {
