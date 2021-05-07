@@ -115,6 +115,16 @@ export function deleteDillema(dillemaId, history){
     }
 }
 
+function dillemaRandomizer(arr){
+    let num = arr.length
+    while(num){
+        const randomNumber = Math.floor(Math.random() * num--)
+        [arr[num], arr[randomNumber]] = [arr[randomNumber], arr[num]];
+    }
+    return arr.slice(0, 5);
+}
+
+
 // Note functions 
 
 export function getNotes(dillemaId) {
