@@ -69,7 +69,9 @@ export function browseDillemas(userId) {
         .then(response => response.json())
         .then(allDillemas => {
             dispatch({ type: actionTypes.allDillemas, payload: allDillemas})
-            dispacth({ type: actionTypes.browseDillemas, payload: data})
+            let otherDillemas = allDillemas.filter(dillema => dillema.user_id !== userId)
+            let someDillemas = dillemaRandomizer(otherDillemas)
+            dispacth({ type: actionTypes.browseDillemas, payload: someDillemas})
         })
         .catch(console.log)
     }
