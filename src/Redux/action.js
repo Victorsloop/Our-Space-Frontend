@@ -123,6 +123,7 @@ export function getNotes(dillemaId) {
             .then(response => response.json())
             .then(notesArr => {
                 let newNotesArr = notesArr.filter(note => note.dillema_id === dillemaId)
+                conosole.log(newNotesArr)
                 dispatch({ type: actionTypes.getNotes, payload: data })
             })
             .catch(console.log)
