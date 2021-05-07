@@ -14,7 +14,6 @@ export function setUser(userObj, history) {
         })
             .then(response => response.json())
             .then(userData => {
-                console.log("IN SET USER 2", userData)
                 localStorage.setItem("token", userData.jwt)
                 localStorage.setItem("user_id", userData.user.id)
                 dispatch({ type: actionTypes.currentUser, payload: userData })
@@ -97,6 +96,8 @@ export function getADillema(userId){
         fetch('http://localhost:3000/api/v1/dillemas')
         .then( response => response.json())
         .then( allDillemas => {
+            let myDillemasArr = allDillemas.filter(dillema => dillema.user_id === userId)
+            console.log(myDillemasArr)
             dispatch({type: actionTypes.myDillemas, payload: data})
         })
         .catch(console.log)
