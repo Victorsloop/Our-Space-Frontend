@@ -2,6 +2,7 @@ import React from 'react'
 import {connect} from 'react-redux'
 import {Navlink} from 'react-router-dom'
 import {withRouter} from 'react-router'
+import {browseDillemas} from '../Redux/action'
 
 class SearchDillema extends React.Component {
 
