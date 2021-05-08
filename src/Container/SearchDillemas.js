@@ -6,6 +6,10 @@ import {browseDillemas} from '../Redux/action'
 
 class SearchDillema extends React.Component {
 
+    state = {
+        dillemaIndex: 0
+    }
+
     render(){
         return(
 
