@@ -4,6 +4,20 @@ import {NavLink} from 'react-router-dom'
 
 
 class Header extends React.Component {
+    loggedOutMenu = [
+        {
+       
+        }
+    ]
+
+    loggedInMenu = [
+       
+    ]
+    logoutHandler = () => {
+        localStorage.clear()
+        window.location.href = '/home'
+    }
+
 
 
     render() {
@@ -18,6 +32,7 @@ class Header extends React.Component {
 function msp(state){
     return({
         currentUser: state.currentUser
+        
     })
 }
 
