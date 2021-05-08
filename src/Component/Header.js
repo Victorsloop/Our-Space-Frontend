@@ -24,6 +24,11 @@ class Header extends React.Component {
         return (
             <div>
                <h1>Our Space</h1>
+               {this.props.currentUser ?
+                    <>
+                    <Menuone/> />
+                    </>
+                    : <Menu2 /> }
             </div>
         )
     }
