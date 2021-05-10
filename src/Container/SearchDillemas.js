@@ -14,6 +14,11 @@ class SearchDillema extends React.Component {
             this.props.browseDillemas(this.props.currentUser.id)
         }
     }
+    componentDidUpdate(prevProps) {
+        if (prevProps.currentUser !== this.props.currentUser) {
+            this.props.browseDillemas(this.props.currentUser.id)
+        }
+    }
 
     render(){
         return(
