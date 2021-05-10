@@ -9,6 +9,11 @@ class SearchDillema extends React.Component {
     state = {
         dillemaIndex: 0
     }
+    componentDidMount() {
+        if (this.props.currentUser) {
+            this.props.browseDillemas(this.props.currentUser.id)
+        }
+    }
 
     render(){
         return(
