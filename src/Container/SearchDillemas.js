@@ -27,7 +27,7 @@ function msp(state) {
 
 function mdp(dispatch) {
     return {
-
+        browseDillemas: (userId) => dispatch(browseDillemas(userId))
     }
 }
 
