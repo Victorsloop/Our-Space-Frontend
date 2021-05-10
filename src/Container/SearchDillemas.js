@@ -29,6 +29,15 @@ class SearchDillema extends React.Component {
         }
     }
 
+    previousDillema = () => {
+        if (this.state.dillemaIndex === 0) {
+            return
+        }
+        else {
+            this.setState(prevState => ({ dillemaIndex: parseInt(prevState.dillemaIndex - 1) }))
+        }
+    }
+
 
     render(){
         return(
