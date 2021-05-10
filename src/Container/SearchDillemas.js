@@ -38,6 +38,10 @@ class SearchDillema extends React.Component {
         }
     }
 
+    renderDillemaCards() {
+        return 
+    }
+
 
     render(){
         return(
