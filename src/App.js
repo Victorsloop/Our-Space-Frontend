@@ -15,6 +15,7 @@ import EditProfile from './Component/EditProfile'
 
 import DisplayDillemas from './Container/DisplayDillemas'
 import SearchDillemas from './Container/SearchDillemas'
+import About from './Component/About'
 
 class App extends React.Component {
 
