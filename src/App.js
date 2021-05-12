@@ -13,7 +13,7 @@ import Login from './Component/Login'
 import Profile from './Component/Profile'
 import EditProfile from './Component/EditProfile'
 
-import DisplayDillemaa from './Container/DisplayDillemas'
+import DisplayDillemas from './Container/DisplayDillemas'
 import SearchDillemas from './Container/SearchDillemas'
 
 class App extends React.Component {
@@ -49,6 +49,7 @@ class App extends React.Component {
             <Route path="/profile" component={Profile} />
             <Route path="/edit" render={() => <EditProfile userObj={this.props.currentUser} />} />
             <Route path="/search-dillemas" component={SearchDillemas} />
+            <Route path="/dillema" component={DisplayDillemas} />
         </Switch>
         </>
         
