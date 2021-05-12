@@ -8,6 +8,11 @@ import {getNotes} from '../Redux/action'
 
 class DisplayDillema extends React.Component {
 
+
+    state = {
+        dillemaIndex: 0
+    }
+
     render(){
         return(
 
