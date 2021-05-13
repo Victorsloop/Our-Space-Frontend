@@ -4,6 +4,7 @@ import {Navlink} from 'react-router-dom'
 import {withRouter} from 'react-router'
 import {deleteDillema} from '../Redux/action'
 import {getNotes} from '../Redux/action'
+import {NoteCards} from '../Component/NoteCards'
 
 
 class DisplayDillema extends React.Component {
