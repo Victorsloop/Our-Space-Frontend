@@ -26,6 +26,15 @@ class DisplayDillema extends React.Component {
         }
     }
 
+    prevDillema = () => {
+        if (this.state.dillemaIndex === 0) {
+            return
+        }
+        else {
+            this.setState(prevState => ({ dillemaIndex: parseInt(prevState.dillemaIndex - 1) }))
+        }
+    }
+
     render(){
         return(
 
