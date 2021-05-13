@@ -17,6 +17,15 @@ class DisplayDillema extends React.Component {
         this.props.getNotes(this.props.location.aboutProps.dillema.id)
     }
 
+    nextDillema = () => {
+        if (this.state.dillemaIndex === this.props.notesArray.length - 1) {
+            return
+        }
+        else {
+            this.setState(prevState => ({ dillemaIndex: parseInt(prevState.dillemaIndex + 1) }))
+        }
+    }
+
     render(){
         return(
 
