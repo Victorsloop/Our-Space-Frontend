@@ -13,6 +13,10 @@ class DisplayDillema extends React.Component {
         dillemaIndex: 0
     }
 
+    componentDidMount() {
+        this.props.getNotes(this.props.location.aboutProps.dillema.id)
+    }
+
     render(){
         return(
 
