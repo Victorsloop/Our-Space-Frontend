@@ -36,6 +36,10 @@ class DisplayDillema extends React.Component {
         }
     }
 
+    deleteHandler = () => {
+        this.props.deleteDillema(this.props.location.aboutProps.dillema.id, this.props.history)
+    }
+
     render(){
         return(
 
