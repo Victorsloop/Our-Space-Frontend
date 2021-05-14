@@ -42,7 +42,7 @@ class DisplayDillema extends React.Component {
     }
 
     renderDillemaCard() {
-        return <DillemaCards dillemaObj={this.props.dillemaArray[this.state.dillemaIndex]}/>
+        return <DillemaCards dillemaObj={this.props.location.aboutProps.dillema}/>
     }
 
 
