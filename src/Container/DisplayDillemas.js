@@ -45,10 +45,9 @@ class DisplayDillema extends React.Component {
         return <DillemaCards dillemaObj={this.props.dillemaArray[this.state.dillemaIndex]}/>
     }
 
+
     renderNoteCards() {
-
-        return <NoteCards />
-
+        return <NoteCards noteObj={this.props.notesArray[this.state.dillemaIndex]}/>
     }
 
     render(){
