@@ -45,6 +45,12 @@ class DisplayDillema extends React.Component {
         return <DillemaCards/>
     }
 
+    renderNoteCards() {
+
+        return <NoteCards />
+
+    }
+
     render(){
         return(
 
