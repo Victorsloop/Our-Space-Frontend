@@ -5,6 +5,7 @@ import {withRouter} from 'react-router'
 import {deleteDillema} from '../Redux/action'
 import {getNotes} from '../Redux/action'
 import {NoteCards} from '../Component/NoteCards'
+import {DillemaCards} from '../Component/DillemaCards'
 
 
 class DisplayDillema extends React.Component {
