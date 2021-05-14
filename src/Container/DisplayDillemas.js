@@ -41,6 +41,10 @@ class DisplayDillema extends React.Component {
         this.props.deleteDillema(this.props.location.aboutProps.dillema.id, this.props.history)
     }
 
+    renderDillemaCard() {
+        return <DillemaCards/>
+    }
+
     render(){
         return(
 
