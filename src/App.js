@@ -55,6 +55,7 @@ class App extends React.Component {
             <Route path="/write-note" component={CreateNote} />
             <Route path="/my-dillema" component={CreateDillema} />
             <Route path="/search-dillemas" component={SearchDillemas} />
+            <Route path="/past-dillemas" component={PastDillema} />
             <Route path="/dillema" component={DisplayDillemas} />
             <Route path="/about" component={About} />
         </Switch>
