@@ -15,6 +15,7 @@ import EditProfile from './Component/EditProfile'
 
 import DisplayDillemas from './Container/DisplayDillemas'
 import SearchDillemas from './Container/SearchDillemas'
+import PastDillema from './Component/PastDillema'
 import CreateDillema from './Component/CreateDillema'
 import CreateNote from './Component/CreateNote'
 import About from './Component/About'
