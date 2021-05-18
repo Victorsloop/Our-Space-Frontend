@@ -53,6 +53,7 @@ class App extends React.Component {
             <Route path="/signup" component={Signup} />
             <Route path="/profile" component={Profile} />
             <Route path="/edit" render={() => <EditProfile userObj={this.props.currentUser} />} />
+            <Route path="/inbox" component={Inbox} />
             <Route path="/write-note" component={CreateNote} />
             <Route path="/my-dillema" component={CreateDillema} />
             <Route path="/search-dillemas" component={SearchDillemas} />
