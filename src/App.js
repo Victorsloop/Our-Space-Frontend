@@ -12,6 +12,7 @@ import Signup from './Component/Signup'
 import Login from './Component/Login'
 import Profile from './Component/Profile'
 import EditProfile from './Component/EditProfile'
+import Inbox from './Component/Inbox'
 
 import DisplayDillemas from './Container/DisplayDillemas'
 import SearchDillemas from './Container/SearchDillemas'
