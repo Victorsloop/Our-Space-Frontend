@@ -14,4 +14,4 @@ class Inbox extends React.Component {
 
 
 
-export default (Inbox)
+export default connect(msp)(Inbox)
