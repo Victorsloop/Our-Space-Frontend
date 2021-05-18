@@ -1,5 +1,6 @@
 import React from 'react'
 import {Navlink} from 'react-router-dom'
+import {connect} from 'react-redux'
 
 class Inbox extends React.Component {
 
