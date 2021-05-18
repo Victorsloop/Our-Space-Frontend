@@ -13,5 +13,13 @@ class Inbox extends React.Component {
 }
 
 
+function msp(state) {
+    return ({
+        currentUser: state.currentUser,
+        otherUser: state.otherUser
+    })
+}
+
+
 
 export default connect(msp)(Inbox)
