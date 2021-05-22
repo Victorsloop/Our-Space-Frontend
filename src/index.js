@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import Provider from 'react-redux'
 import BrowserRouter from 'react-router-dom'
 import { PersistGate } from 'redux-persist/lib/integration/react'
+import { createStore, applyMiddleware } from 'redux'
 import storage from 'redux-persist/lib/storage'
 import { persistStore, persistReducer } from 'redux-persist'
 import autoMergeLevel2 from 'redux-persist/lib/stateReconciler/autoMergeLevel2'
